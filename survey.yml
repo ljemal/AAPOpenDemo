@@ -1,0 +1,9 @@
+---
+- name: install and update
+  hosts: all
+  become: true
+  tasks:
+    - name: install on all hosts
+      yum:
+        name: "{{ packages_to_install }}"
+        state: present
