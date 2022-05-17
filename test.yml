@@ -7,5 +7,5 @@
     - name: content 
       copy:
         content: {{ CONTENT }}
-        dest: {{ DIRECTORY }}/{{FILE}}
+        dest: {{ DIRECTORY }}
         state: touch
