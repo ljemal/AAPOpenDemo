@@ -6,6 +6,6 @@
   tasks:
     - name: content 
       copy:
-        content: "{{ CONTENT }}"
-        dest: "{{ DIRECTORY }}/{{FILE}}"
+        content: {{ CONTENT }}
+        dest: {{ DIRECTORY }}/{{FILE}}
         state: touch
