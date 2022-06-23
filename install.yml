@@ -16,14 +16,14 @@
       name: firewalld
       enabled: true
       state: started
-  - name: firewalld permits http service
-    ansible.posix.firewalld:
-      service: http
-      permanent: true
-      state: enabled
-      immediate: true
-  - name: apache enabled and running
-    ansible.builtin.service:
-      name: httpd
-      enabled: true
-      state: started
+  #- name: firewalld permits http service
+#    ansible.posix.firewalld:
+#      service: http
+#      permanent: true
+ #     state: enabled
+ #     immediate: true
+#  - name: apache enabled and running
+ #   ansible.builtin.service:
+ #     name: httpd
+  #    enabled: true
+  #    state: started
